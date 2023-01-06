@@ -1,0 +1,28 @@
+.bottom-link {
+  margin-left: 70px;
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+
+.footer-link-social {
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.footer-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.bot-color {
+  fill: var(--color-primary);
+}

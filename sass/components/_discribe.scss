@@ -1,0 +1,75 @@
+.discribe {
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+  &__input input {
+    width: 358px;
+    height: 50px;
+    margin-left: 0;
+
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--color-section);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__input {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  &__button {
+    display: flex;
+    gap: 10px;
+    width: 200px;
+
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--color-third);
+    border: none;
+    padding: 10px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--color-primary);
+  }
+  &__button:focus,
+  &__button:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+  }
+
+  &__svg {
+    fill: var(--color-primary);
+  }
+}
