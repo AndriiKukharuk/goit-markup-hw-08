@@ -1,6 +1,11 @@
 .bottom-link {
   margin-top: 60px;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 0px;
+  }
+
   &__title {
     font-family: "Roboto";
     font-style: normal;
