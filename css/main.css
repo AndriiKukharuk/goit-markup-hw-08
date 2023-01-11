@@ -416,6 +416,9 @@ form {
 @media screen and (min-width: 768px) {
   .discribe {
     margin-top: 60px;
+    margin-left: 159px;
+    width: 450px;
+    height: 156px;
   }
 }
 .discribe__input input {
@@ -435,6 +438,11 @@ form {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .discribe__input input {
+    width: 450px;
+  }
 }
 .discribe__title {
   font-family: "Roboto";
@@ -1020,6 +1028,12 @@ textarea {
   padding-bottom: 30px;
   background-color: var(--color-primary);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__flex > li {
+    width: 354px;
+    height: 536px;
+  }
 }
 
 .team {
