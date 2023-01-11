@@ -5,28 +5,37 @@
             rgba(47, 48, 58, 0.4)),
         url(../images/backgraundfone.jpg);
 
-    background-position: center;
-
-    max-width: 1600px;
+    
+background-position: center;
+width: 480px;
+    height: 400px;
+    max-width: 480px;
     background-repeat: no-repeat;
 
-    background-size: 1600px;
+    background-size: cover;
     margin-top: 0px;
         margin-bottom: 0px;
-        width: 1600px;
-        padding: 200px 0px;
+@media screen and (min-width: 768px) {
+        width: 768px;
+        max-width: 768px;
+    }
+        
         &__name {
                 margin-bottom: 0px;
                 align-items: center;
                 max-width: 696px;
                 margin: 0 auto;
+                
             }
         
             &__name {
                 color: var(--color-primary);
-        
+        text-align: center;
+            padding-top: 118px;
+            max-width: 360px;
+       
                 font-weight: 900;
-                font-size: 44px;
+                font-size: 26px;
                 line-height: 1.36;
         
                 text-align: center;

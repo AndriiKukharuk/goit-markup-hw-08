@@ -2,6 +2,10 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #ececec;
+    width: 480px;
+    @media screen and (min-width: 768px) {
+            width: 768px;
+        }
     &__nav {
             display: flex;
             justify-content: flex-start;
@@ -35,7 +39,18 @@
                                 
 }
 .auth-nav {
-    display: flex;
+  display: none;
+@media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 96px;
+        font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+           
+    }
+    
     align-items: center;
     gap: 40px;
     transition-property: color;
@@ -50,13 +65,26 @@
         &__smartphone {
             display: flex;
             align-items: center;
+            
+        }
+        & >li{
+            margin-bottom: 10px;
         }
 }
 .site-nav {
     display: flex;
+    @media screen and (max-width: 768px) {
+            display: none;
+        }
     align-items: center;
     gap: 50px;
     margin-left: 93px;
+}
+.header__svg{
+@media screen and (min-width: 768px) {
+        display: none;
+    }
+
 }
 .site-nav .site-nav__link.current {
     color: var(--color-third);

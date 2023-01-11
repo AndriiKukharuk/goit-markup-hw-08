@@ -1,12 +1,19 @@
 .feature-list {
-  padding-top: 94px;
-  
+  padding-top: 60px;
+ 
   &__title {
-    display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
-    gap: 30px;
-    justify-content: space-between;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        gap: 30px;
+        
+        }
+    // display: flex;
+    // padding-left: 0px;
+    // padding-right: 0px;
+    // gap: 30px;
+    // justify-content: space-between;
   }
   
 
@@ -15,12 +22,16 @@
     display: inline-block;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    width: 450px;
     background-color: var(--color-bottom);
     background-image: url(../images/antenna\ 1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+    
   }
 
   &__before1::before {
@@ -28,12 +39,15 @@
     display: inline-block;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    width: 450px;
     background-color: var(--color-bottom);
     background-image: url(../images/clock\ 1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+      }
   }
 
   &__before2::before {
@@ -41,12 +55,15 @@
     display: inline-block;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    width: 450px;
     background-color: var(--color-bottom);
     background-image: url(../images/diagram\ 1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+      }
   }
 
   &__before3::before {
@@ -54,27 +71,40 @@
     display: inline-block;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    width: 450px;
     background-color: var(--color-bottom);
     background-image: url(../images/astronaut\ 1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+      }
   }
      &__caption {
        font-weight: 700;
+       text-align: center;
        font-size: 14px;
        line-height: 1.14;
        letter-spacing: 0.03em;
        text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+          width: 354px;
+          text-align: left;
+        }
+      
+       
      }
   
      &__text {
        color: var(--color-link);
-  
+  margin-bottom: 30px;
        font-size: 14px;
        line-height: 1.71;
        letter-spacing: 0.03em;
+          @media screen and (min-width: 768px) {
+              width: 354px;
+            }
      }
-}
 
+    }

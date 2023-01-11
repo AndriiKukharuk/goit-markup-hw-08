@@ -1,14 +1,17 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__flex {
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: center;
     gap: 30px;
     align-items: center;
   }
 
   &__ikon {
-    width: 170px;
+    width: 210px;
     height: 92px;
   }
   &__link:hover,
@@ -31,10 +34,10 @@
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }

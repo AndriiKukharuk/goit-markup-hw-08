@@ -3,6 +3,7 @@ body {
     color: var(--color-secondary);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    width: 480px;
 }
 
 * {
@@ -63,9 +64,15 @@ h1 {
 
 .conteiner {
     padding: 0 15px;
-    width: 1200px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
+   @media screen and (min-width: 480px) {
+    width: 480px;
+    }
+          @media screen and (min-width: 768px) {
+              width: 768px;
+          }
 }
 
 .border {
