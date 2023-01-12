@@ -10,10 +10,19 @@
     width: 768px;
     height: 464px;
   }
+    @media screen and (min-width: 1200px) {
+      width: 1600px;
+      height: auto;
+
+    }
   &__display {
     @media screen and (min-width: 768px) {
       margin-left: 76px;
     }
+        @media screen and (min-width: 1200px) {
+         margin-left: 0px;
+    
+        }
   }
   &__adress {
     font-family: "Roboto";
@@ -45,6 +54,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0px;
+    
+      }
   }
 
   &__link {
@@ -64,6 +77,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+    @media screen and (min-width: 1200px) {
+     flex-wrap: nowrap;
+  text-align: left;
+    }
 }
 
 .footer__logo {

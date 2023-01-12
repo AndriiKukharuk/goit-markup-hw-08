@@ -77,6 +77,13 @@ h1 {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+    margin-left: 215px;
+    margin-right: 215px;
+  }
+}
 
 .border {
   border-bottom: 1px solid #ececec;
@@ -91,6 +98,11 @@ a:focus {
 form {
   width: 448px;
 }
+@media screen and (max-width: 780px) {
+  form {
+    width: auto;
+  }
+}
 
 .header {
   margin-left: auto;
@@ -101,6 +113,11 @@ form {
 @media screen and (min-width: 768px) {
   .header {
     width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
   }
 }
 .header__nav {
@@ -145,6 +162,11 @@ form {
     letter-spacing: 0.02em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+  }
+}
 .auth-nav__envelope, .auth-nav__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -155,6 +177,11 @@ form {
 }
 .auth-nav > li {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav > li {
+    margin-bottom: 0px;
+  }
 }
 
 .site-nav {
@@ -231,6 +258,15 @@ form {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    background-size: 1600px;
+    width: 1600px;
+    padding: 200px 0px;
+    height: 600px;
+  }
+}
 .hero__name {
   margin-bottom: 0px;
   align-items: center;
@@ -248,6 +284,13 @@ form {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__name {
+    padding-top: 0px;
+    max-width: 696px;
+    font-size: 44px;
+  }
 }
 .hero__button:hover, .hero__button:focus {
   color: var(--color-secondary);
@@ -288,6 +331,11 @@ form {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+  }
+}
 .work__title {
   font-weight: 700;
   font-size: 36px;
@@ -295,12 +343,22 @@ form {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .work__title {
+    margin-top: 94px;
+  }
+}
 .work__flex {
   display: flex;
   margin-top: 50px;
   justify-content: space-around;
   gap: 30px;
   padding-left: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .work__flex {
+    margin-bottom: 94px;
+  }
 }
 .work__img {
   position: relative;
@@ -349,6 +407,12 @@ form {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1200px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .backdrop__button-exit {
   width: 30px;
   height: 30px;
@@ -374,6 +438,12 @@ form {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .clients__flex {
   display: flex;
   flex-wrap: wrap;
@@ -382,9 +452,19 @@ form {
   gap: 30px;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .clients__flex {
+    flex-wrap: nowrap;
+  }
+}
 .clients__ikon {
   width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__ikon {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border: 1px solid var(--color-third);
@@ -421,6 +501,15 @@ form {
     height: 156px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .discribe {
+    margin-left: 93px;
+    margin-top: 0px;
+    text-align: left;
+    width: 570px;
+    height: 86px;
+  }
+}
 .discribe__input input {
   width: 358px;
   height: 50px;
@@ -444,6 +533,11 @@ form {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .discribe__input input {
+    width: 358px;
+  }
+}
 .discribe__title {
   font-family: "Roboto";
   font-style: normal;
@@ -457,6 +551,11 @@ form {
 .discribe__input {
   gap: 12px;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .discribe__input {
+    display: flex;
+  }
 }
 .discribe__button {
   gap: 10px;
@@ -478,6 +577,12 @@ form {
   letter-spacing: 0.06em;
   color: var(--color-primary);
 }
+@media screen and (min-width: 1200px) {
+  .discribe__button {
+    display: flex;
+    margin-top: 0px;
+  }
+}
 .discribe__button:focus, .discribe__button:hover {
   color: var(--color-primary);
   cursor: pointer;
@@ -489,12 +594,27 @@ form {
 .feature-list {
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    padding-top: 94px;
+  }
+}
 @media screen and (min-width: 768px) {
   .feature-list__title {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .feature-list__title {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 30px;
+    justify-content: space-between;
   }
 }
 .feature-list__before::before {
@@ -514,6 +634,11 @@ form {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list__before::before {
+    width: 270px;
+  }
+}
 .feature-list__before1::before {
   content: "";
   display: inline-block;
@@ -529,6 +654,11 @@ form {
 @media screen and (min-width: 768px) {
   .feature-list__before1::before {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__before1::before {
+    width: 270px;
   }
 }
 .feature-list__before2::before {
@@ -548,6 +678,11 @@ form {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list__before2::before {
+    width: 270px;
+  }
+}
 .feature-list__before3::before {
   content: "";
   display: inline-block;
@@ -565,6 +700,11 @@ form {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list__before3::before {
+    width: 270px;
+  }
+}
 .feature-list__caption {
   font-weight: 700;
   text-align: center;
@@ -579,6 +719,11 @@ form {
     text-align: left;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list__caption {
+    width: 270px;
+  }
+}
 .feature-list__text {
   color: var(--color-link);
   margin-bottom: 30px;
@@ -591,6 +736,11 @@ form {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list__text {
+    width: 270px;
+  }
+}
 
 .bottom-link {
   margin-top: 60px;
@@ -600,6 +750,12 @@ form {
   .bottom-link {
     margin-left: 165px;
     margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom-link {
+    margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 .bottom-link__title {
@@ -641,9 +797,20 @@ form {
     height: 464px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1600px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__display {
     margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__display {
+    margin-left: 0px;
   }
 }
 .footer__adress {
@@ -675,6 +842,11 @@ form {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    padding: 32px 0px;
+  }
+}
 .footer__link {
   text-decoration: none;
 }
@@ -691,6 +863,12 @@ form {
   .footter__flex {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footter__flex {
+    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
@@ -731,6 +909,13 @@ form {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 1200px) {
+  .form {
+    width: 370px;
+    height: 60px;
+    line-height: 30px;
+  }
+}
 .form__field {
   display: flex;
   flex-direction: column;
@@ -760,6 +945,11 @@ form {
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1200px) {
+  .form__field input {
+    width: 370px;
+  }
+}
 .form__field label {
   margin-bottom: 4px;
   font-family: "Roboto";
@@ -787,6 +977,11 @@ form {
   padding: 12px 16px;
   outline: none;
 }
+@media screen and (max-width: 1200px) {
+  .form__field textarea {
+    width: 370px;
+  }
+}
 .form__svg {
   position: absolute;
   top: 50%;
@@ -806,6 +1001,11 @@ form {
 .form__checkbox {
   margin-top: 20px;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .form__checkbox {
+    text-align: left;
+  }
 }
 
 .size {
@@ -845,6 +1045,11 @@ form {
   margin-left: 7px;
   letter-spacing: 0.03em;
   color: var(--color-link);
+}
+@media screen and (max-width: 1200px) {
+  .checkbox__text {
+    font-size: 12px;
+  }
 }
 
 .checkbox__link {
@@ -962,6 +1167,12 @@ textarea {
   justify-content: center;
   gap: 8px;
 }
+@media screen and (max-width: 768px) {
+  .link {
+    flex-wrap: wrap;
+    width: 326px;
+  }
+}
 
 .link__button {
   font-weight: 500;
@@ -1021,6 +1232,11 @@ textarea {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__flex {
+    flex-wrap: nowrap;
+  }
+}
 
 .team__flex > li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1035,6 +1251,11 @@ textarea {
     height: 536px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__flex > li {
+    height: auto;
+  }
+}
 
 .team {
   padding-top: 60px;
@@ -1044,6 +1265,11 @@ textarea {
 @media screen and (min-width: 768px) {
   .team {
     width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1600px;
   }
 }
 .team__title {

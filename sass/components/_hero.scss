@@ -19,6 +19,13 @@ width: 480px;
         width: 768px;
         max-width: 768px;
     }
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            background-size: 1600px;
+            width: 1600px;
+            padding: 200px 0px;
+            height: 600px;
+        }
         
         &__name {
                 margin-bottom: 0px;
@@ -33,7 +40,11 @@ width: 480px;
         text-align: center;
             padding-top: 118px;
             max-width: 360px;
-       
+        @media screen and (min-width: 1200px) {
+                padding-top: 0px;
+                max-width: 696px;
+                font-size: 44px;
+            }
                 font-weight: 900;
                 font-size: 26px;
                 line-height: 1.36;

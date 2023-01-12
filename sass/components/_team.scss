@@ -8,6 +8,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+     @media screen and (min-width: 1200px) {
+  flex-wrap: nowrap;
+     }
 }
 .team__flex > li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -20,6 +23,9 @@
     width: 354px;
     height: 536px;
   }
+     @media screen and (min-width: 1200px) {
+ height: auto;
+     }
 }
 
 .team {
@@ -29,6 +35,9 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+         @media screen and (min-width: 1200px) {
+           width: 1600px;
+         }
   &__title {
     font-weight: 700;
     font-size: 36px;

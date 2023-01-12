@@ -6,17 +6,16 @@
     @media screen and (min-width: 768px) {
             width: 768px;
         }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+            }
     &__nav {
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }
     
-        
-        
-                
-        
-                &__container {
+         &__container {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -50,7 +49,9 @@
             letter-spacing: 0.02em;
            
     }
-    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     align-items: center;
     gap: 40px;
     transition-property: color;
@@ -69,6 +70,9 @@
         }
         & >li{
             margin-bottom: 10px;
+            @media screen and (min-width: 1200px) {
+                    margin-bottom: 0px;
+                }
         }
 }
 .site-nav {

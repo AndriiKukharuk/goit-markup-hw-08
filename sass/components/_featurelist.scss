@@ -1,19 +1,24 @@
 .feature-list {
   padding-top: 60px;
- 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
   &__title {
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         flex-basis: 50%;
         gap: 30px;
-        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+              padding-left: 0px;
+              padding-right: 0px;
+              gap: 30px;
+              justify-content: space-between;
+          }
         }
-    // display: flex;
-    // padding-left: 0px;
-    // padding-right: 0px;
-    // gap: 30px;
-    // justify-content: space-between;
+    
   }
   
 
@@ -31,7 +36,9 @@
     @media screen and (min-width: 768px) {
         width: 354px;
       }
-    
+         @media screen and (min-width: 1200px) {
+          width: 270px;
+         }
   }
 
   &__before1::before {
@@ -48,6 +55,9 @@
     @media screen and (min-width: 768px) {
         width: 354px;
       }
+                 @media screen and (min-width: 1200px) {
+                   width: 270px;
+                 }
   }
 
   &__before2::before {
@@ -64,6 +74,9 @@
     @media screen and (min-width: 768px) {
         width: 354px;
       }
+                 @media screen and (min-width: 1200px) {
+                   width: 270px;
+                 }
   }
 
   &__before3::before {
@@ -80,6 +93,9 @@
     @media screen and (min-width: 768px) {
         width: 354px;
       }
+                 @media screen and (min-width: 1200px) {
+                   width: 270px;
+                 }
   }
      &__caption {
        font-weight: 700;
@@ -92,7 +108,10 @@
           width: 354px;
           text-align: left;
         }
-      
+                 @media screen and (min-width: 1200px) {
+                  
+                  width: 270px;
+                 }
        
      }
   
@@ -105,6 +124,10 @@
           @media screen and (min-width: 768px) {
               width: 354px;
             }
+                         @media screen and (min-width: 1200px) {
+            
+                           width: 270px;
+                         }
      }
 
     }
