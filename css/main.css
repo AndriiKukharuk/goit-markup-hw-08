@@ -3,7 +3,7 @@ body {
   color: var(--color-secondary);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  width: 480px;
+  overflow-x: hidden;
 }
 
 * {
@@ -1262,11 +1262,6 @@ textarea {
   padding-bottom: 60px;
   background-color: var(--color-bottom);
 }
-@media screen and (min-width: 768px) {
-  .team {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .team {
     width: 1600px;
@@ -1294,4 +1289,23 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-link);
+}
+
+.menu-button {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

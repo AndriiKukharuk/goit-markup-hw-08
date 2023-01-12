@@ -3,7 +3,7 @@ body {
     color: var(--color-secondary);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    width: 480px;
+    overflow-x: hidden;
 }
 
 * {
