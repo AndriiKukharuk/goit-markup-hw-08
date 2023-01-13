@@ -1,8 +1,11 @@
 .work {
    display: none;
     @media screen and (min-width: 1200px) {
-    
-            display: contents;
+   
+            display: inherit;
+            width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
         }
     padding-top: 94px;
     padding-bottom: 94px;

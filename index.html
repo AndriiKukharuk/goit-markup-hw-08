@@ -40,12 +40,17 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="menu-button is-open">
+        <button type="button" class="menu-button is-open" aria-expanded="false"
+          aria-controls="menu-container" data-menu-button>
         <svg width="40" height="40" class="header__svg" aria-label="переключател моб меню">
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-          <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-close_40px"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_40px"></use>
         </svg>
         </button>
+        <div class="menu-container" id="menu-container" data-menu >
+        контент меню
+
+        </div>
         <ul class="auth-nav">
           <li>
             <a href="info@devstudio.com" class="auth-nav__smartphone">
@@ -504,5 +509,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
