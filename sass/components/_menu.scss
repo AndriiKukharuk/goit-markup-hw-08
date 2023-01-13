@@ -12,6 +12,7 @@
   transform: translateX(0);
 }
 .mobile-menu {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,14 +39,14 @@
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-    padding-top: 48px;
-    padding-left: 40px;
+    
   }
   &__link {
     color: #212121;
   }
   &__adress {
     margin-top: 306px;
+    
   }
   &__post {
     font-weight: 500;
@@ -54,7 +55,7 @@
     letter-spacing: 0.02em;
 
     color: #757575;
-    margin-top: 32px;
+    
   }
   &__tel {
     font-weight: 500;
@@ -62,5 +63,31 @@
     line-height: 40px;
     letter-spacing: 0.02em;
     color: #2196f3;
+    
   }
+  &__social{
+    margin-top: 64px;
+    gap: 10px;
+    display: flex;
+    font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      
+      letter-spacing: 0.02em;
+  }
+  &__container{
+    padding: 48px;
+  }
+}
+.mobile-menu__insta{
+  color: #2196F3;
+}
+.mobile-menu__nav .mobile-menu__link.current{
+  color: var(--color-third);
+}
+.mobile-menu__nav>li:not(:last-child){
+  margin-bottom: 32px;
+}
+.mobile-menu__adress>li:not(:last-child){
+  margin-bottom: 32px;
 }
