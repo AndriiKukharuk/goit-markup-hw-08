@@ -93,9 +93,6 @@ a:focus {
   fill: var(--color-third);
 }
 
-form {
-  width: 448px;
-}
 @media screen and (max-width: 780px) {
   form {
     width: auto;
@@ -1274,6 +1271,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team {
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .team__title {
