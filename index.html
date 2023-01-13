@@ -40,15 +40,64 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="menu-button is-open" aria-expanded="false"
-          aria-controls="menu-container" data-menu-button>
-        <svg width="40" height="40" class="header__svg" aria-label="переключател моб меню">
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-close_40px"></use>
-          <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-        </svg>
+        <button type="button" class="burger js-open-menu" aria-expanded="false"
+          aria-controls="menu-container" >
+        <svg width="40" height="40" class="header__svg" >
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu >
-        контент меню
+        <div class="mobile-menu js-menu-container" >
+              <button class="mobile-menu__close js-close-menu" type="button">
+                <svg width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu__nav">
+            <li>
+              <a href="./index.html" class="mobile-menu__link current">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li>
+              <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+                  <ul class="mobile-menu__adress">
+                   <li>
+                    <a href="tel:+380961111111" class="mobile-menu__tel">
+                    +380961111111
+                    </a>
+                  </li>
+                    <li>
+                    <a href="info@devstudio.com" class="mobile-menu__post">
+                      info@devstudio.com</a>
+                  </li>
+                 
+                </ul>
+                  <ul class="">
+                    
+                  <li>
+                    <a href="" class="">
+                      Instagram
+                     </a>
+                  </li>
+                  <li>
+                    <a href=""  class="">
+                   Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""  class="">
+                   Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""  class="">
+                   LinkedIn
+                    </a>
+                  </li>
+                </ul>
 
         </div>
         <ul class="auth-nav">
@@ -509,6 +558,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
