@@ -103,17 +103,10 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ececec;
-  width: 480px;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    width: 768px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -246,7 +239,6 @@ a:focus {
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgraundfone.jpg);
   background-position: center;
-  width: 480px;
   height: 400px;
   max-width: 480px;
   background-repeat: no-repeat;
@@ -254,9 +246,13 @@ a:focus {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/images/Img@2x2.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     max-width: 768px;
   }
 }
@@ -264,7 +260,6 @@ a:focus {
   .hero {
     max-width: 1600px;
     background-size: 1600px;
-    width: 1600px;
     padding: 200px 0px;
     height: 600px;
   }
@@ -336,7 +331,6 @@ a:focus {
 @media screen and (min-width: 1200px) {
   .work {
     display: inherit;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -442,7 +436,6 @@ a:focus {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -600,7 +593,6 @@ a:focus {
 @media screen and (min-width: 1200px) {
   .feature-list {
     padding-top: 94px;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -791,23 +783,10 @@ a:focus {
 
 .footer {
   background-color: var(--color-section);
-  width: 480px;
-  height: 603px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
-    height: 464px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1600px;
-    height: auto;
-  }
+  max-width: 1600px;
 }
 @media screen and (min-width: 768px) {
   .footer__display {
@@ -1249,7 +1228,11 @@ textarea {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
   background-color: var(--color-primary);
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .team__flex > li {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__flex > li {
@@ -1263,6 +1246,18 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .team__flex img {
+    height: 374px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__flex img {
+    height: 460px;
+    width: 450px;
+  }
+}
+
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1270,7 +1265,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
